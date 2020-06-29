@@ -38,7 +38,7 @@ constexpr unsigned int unprivileged_user_id{100000};
 anbox::cmds::ContainerManager::ContainerManager()
     : CommandWithFlagsAndAction{
           cli::Name{"container-manager"}, cli::Usage{"container-manager"},
-          cli::Description{"Start the container manager service"}, true} {
+          cli::Description{"Start the container manager service"}} {
 
   flag(cli::make_flag(cli::Name{"android-image"},
                       cli::Description{"Path to the Android rootfs image file if not stored in the data path"},
