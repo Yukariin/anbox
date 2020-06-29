@@ -1,6 +1,8 @@
 project(anbox C CXX)
 cmake_minimum_required(VERSION 2.8.2)
 
+set(CXX_STANDARD 20)
+
 include(CTest)
 include(GNUInstallDirs)
 
@@ -27,7 +29,7 @@ set(EXTRA_CXX_WARNINGS "-Wnon-virtual-dtor -Wold-style-cast")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_AND_CXX_WARNINGS}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_C_WARNINGS}")
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 ${C_AND_CXX_WARNINGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${C_AND_CXX_WARNINGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EXTRA_C_WARNINGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EXTRA_CXX_WARNINGS}")
 
