@@ -116,7 +116,6 @@ void ApplicationManager::launch(const android::Intent &intent,
 
   #pragma GCC diagnostic push
   #pragma GCC diagnostic warning "-Wpragmas"
-  #pragma GCC diagnostic warning "-Wc99-extensions"
   sd_bus_error error = SD_BUS_ERROR_NULL;
   #pragma GCC diagnostic pop
 
